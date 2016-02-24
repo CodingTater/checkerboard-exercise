@@ -1,7 +1,6 @@
 // console.log('Its alive');
 
-var tile = document.createElement("div");
-var divs;
+var tile;
 
 for (var i = 0; i<63; i++) {
   var tile = document.createElement("div");
@@ -20,12 +19,12 @@ for (var i = 0; i<63; i++) {
 
 var colorChange = function(){
  for (var i = 0; i<63; i++){
-   var divs = document.getElementsByTagName("div")[i]
+   var tile = document.getElementsByTagName("div")[i]
    var a = Math.floor(Math.random() * 255);
    var b = Math.floor(Math.random() * 255);
    var c = Math.floor(Math.random() * 255);
    var color = 'rgb(' + a + ',' + b + ',' + c + ')';
-   divs.style.backgroundColor = color;
+   tile.style.backgroundColor = color;
  };
 }
 
